@@ -1,0 +1,36 @@
+@import '../../../App.scss';
+  
+  .checklist__row {
+    display: flex;
+    margin-right: vw(-1);
+    margin-bottom: vw(-1);
+    margin-left: vw(-1);
+    flex-wrap: wrap;
+    align-content: stretch;
+  }
+  
+  .checklist__col {
+    margin-bottom: vw(2.2);
+    padding-right: vw(1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .listItemText {
+    color: #000000;
+    font-size: vw(1.8);
+    letter-spacing: vw(0.1);
+    white-space: pre-wrap;
+    text-align: left;
+  }
+  
+  .checklist_icon_img {
+    margin-bottom: vw(1.5);
+    width: vw(2);
+    height: vw(2);
+  }
+ 
+  
+
+  

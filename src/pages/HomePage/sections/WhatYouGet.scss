@@ -1,0 +1,74 @@
+@import '../../../App.scss';
+
+.features__section {
+    color: #fff;
+    padding-top: vw(3);
+    padding-bottom: vw(3);
+}
+  
+.features__container{
+    z-index: 1;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: vw(3.7);
+    padding-left: vw(3.7);
+}
+ 
+.features__row {
+    align-items: center;
+    display: flex;
+    margin-right: vw(-1);
+    margin-bottom: vw(-1);
+    margin-left: vw(-1);
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+  
+.features__col {
+    margin-bottom: vw(1);
+    padding-right: vw(1);
+    padding-left: vw(1);
+    /* flex: 1; */
+    max-width: 50%;
+    flex-basis: 50%; /* override by HeroSection.js */
+    justify-content: center;
+    display: flex;
+}
+
+.features__text__wrapper {
+    max-width: vw(45); /* override by HeroSection.js*/
+    padding-top: 0;
+}
+
+.features__img__wrapper {
+    width: vw(40);
+}
+  
+.features__img {
+    border: 0;
+    vertical-align: middle;
+    /* display: inline-block; */
+    object-fit: fill;
+    width: vw(40);
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: vw(0.75);
+    padding-right: 0;
+}
+
+
+.features__btn__blue {
+    font-family: 'Poppins';
+    padding: vw(0.88) vw(3.7);
+    font-size: vw(1.5);
+    background-color: #0076C6;
+    color: #fff;
+    border: none;
+  }
+
+.features__btn__blue:hover {
+    background-color: #0888dd;
+    color: #fff;
+    border: none;
+  }

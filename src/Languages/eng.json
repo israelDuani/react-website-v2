@@ -1,0 +1,83 @@
+{
+  "route-title_home":"Mimi",
+  "route-title_qa":"Frequently Asked Questions",
+  "route-title_tutorial":"Tutorials",
+  "route-title_about_us":"About Us",
+  "route-title_contact_us":"Contact Us",
+
+  "analytic_overview": "Analytics Overview",
+  "//comment_0": "about us - not done, need to add main text",
+  "about-us__sign_up_btn": "SIGN UP",
+
+  "//comment_1": "footer",
+  "footer__contact_us_btn": "CONTACT US",
+  "footer__logo": "MIMI",
+  "footer__terms_of_use": "Terms of use",
+  "footer__privacy_policy": "Privacy policy",
+  "footer__sign_up_btn": "SIGN UP",
+  "footer__offer_contact_us" : "Still thinking about it?\nask us anything",
+  "footer__offer_sign_up" : "Not registered yet?\nclick here",
+
+
+  "//comment_2": "language-btn",
+  "language-btn__drop_one": "Hebrew",
+  "language-btn__drop_two": "English",
+  "language-btn__curr_lang": "English",
+
+  "//comment_3": "navbar + used for top header",
+  "navbar__home": "HOME",
+  "navbar__qa": "QA",
+  "navbar__tutorial": "TUTORIAL",
+  "navbar__about_us": "ABOUT US",
+  "navbar__contact_us": "CONTACT US",
+  "navbar__console": "CONSOLE",
+  
+  "about-us__headline": "How Mimi Plan was born?",
+
+  "contact-us__heading": "Get In Touch With Us",
+  "contact-us__subtitle": "We Are Always Here To Help you\nYou also can contact us by mail support@gmail.com",
+  "contact-us__form_name_placeholder": "Your Name *",
+  "contact-us__form_email_placeholder": "Email Address *",
+  "contact-us__form_phone_placeholder": "Phone Number (optional)",
+  "contact-us__form_subject_placeholder": "Subject *",
+  "contact-us__form_content_placeholder": "Your Message *",
+  "contact-us__form_name_err": "Please input your name",
+  "contact-us__form_email_err": "Please input your mail",
+  "contact-us__form_subject_err": "Please input subject",
+  "contact-us__form_content_err": "Please input message",
+  "contact-us__form_btn": "Submit",
+
+
+  "pricing__subscribtion_price_small": "$6.99",
+  "pricing__subscribtion_time_small": "Monthly",
+  "pricing__subscribtion_price_big": "$69.99",
+  "pricing__subscribtion_time_big": "Yearly",
+  "qa__table_heading_one": "Table of content",
+  "qa__table_heading_two": "General",
+  "qa__table_heading_three": "Payment",
+  "qa__table_heading_four": "Education",
+  "qa__table_heading_five": "Scoring",
+  "qa__table_heading_six": "Subscribtion",
+  "store__heading": "MIMI mobile application available on",
+
+  "what-you-get__web_item_one": "Website console access.",
+  "what-you-get__web_item_two": "A variety of statistics on family progress.",
+  "what-you-get__web_item_three": "View history of submission and actions taken.",
+  "what-you-get__web_item_four": "End-of-period awards for the children.",
+  "what-you-get__web_item_five": "Define subjects in which you will want\nto work with each child individually.",
+  "what-you-get__web_item_six": "Settting up rewards to each child  individually\nor for the whole family.",
+  "what-you-get__web_item_seven": "View insights on the whole family or\non each child individually.",
+
+  "what-you-get__app_item_one": "Mobile app access.",
+  "what-you-get__app_item_two": "View submission history.",
+  "what-you-get__app_item_three": "Exchange points to rewards.",
+  "what-you-get__app_item_four": "Receive end-of-period awards according\nto the child's behavior during the period.",
+  "what-you-get__app_item_five": "Watch the children's improvement by subject.",
+  "what-you-get__app_item_six": "Work on subjects you would like to work on\nwith each child individually.",
+  "what-you-get__app_item_seven": "Encourage your child to continue to behave well\nby automatic bonuses.",
+  
+  "what-you-get__button_sign_up": "CLICK HERE TO SIGN UP",
+  "home__first_section_button": "SIGN UP NOW",
+  "home__second_section_button": "Learn More",
+  "home__third_section_button": "GET STARTED NOW"
+}

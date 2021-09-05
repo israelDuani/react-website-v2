@@ -1,0 +1,41 @@
+@import '../App.scss';
+
+.top--section__background {
+    /* background-color: transparent!important; */
+    margin-top:vw(-11);
+    background-image: url('../imagesSrc/halfCloudTop.webp'),
+    linear-gradient(
+      rgba(0, 118, 198, 0.2), 
+      rgba(0, 51, 86, 0.7)
+    ), url('../imagesSrc/sectionOneBg.webp');
+    background-color: #f00946;
+    background-position: center bottom,center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size:100% ,cover,100% ; /* Resize the background image to cover the entire container */
+    /* box-shadow: inset 0 0 0 1000px rgba(0, 118, 198,.2); */
+  }
+  
+  .top--section__container {
+    color: #fff;
+    padding-top: vw(10);
+    padding-bottom: vw(6);
+    display: flex;
+    justify-content: center;
+  }
+
+  .top--section__text__wrapper {
+    max-width: vw(45); /* override by HeroSection.js*/
+    padding-top: 0;
+    text-align: left;
+  }
+
+  .top--line__heading {
+    margin-bottom: vw(0.2);
+    font-family: 'Galada';
+    /* line-height: 1.1vw; */
+    font-weight: 500;
+    color: #f7f8fa;
+    font-size: vw(3.2); /* override by HeroSection.js*/
+    white-space: pre-wrap;
+  }
+  

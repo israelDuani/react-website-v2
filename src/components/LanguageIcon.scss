@@ -1,0 +1,14 @@
+@import '../App.scss';
+
+html[dir='rtl'] .language--icon_img {
+  margin-right: auto;
+  margin-left: vw(0.6);
+}
+
+.language--icon_img {
+  margin-top: vw(0.2);
+  margin-right: vw(0.6);
+  margin-left: auto;
+  width: vw(1.6);
+  height: vw(1.6);
+}

@@ -1,3 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /*.webp
+Sitemap:mimiplan.com/sitemap.xml
+

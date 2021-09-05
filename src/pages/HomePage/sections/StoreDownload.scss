@@ -1,0 +1,105 @@
+@import '../../../App.scss';
+
+.store__background__image{
+  background-image: url('../../../imagesSrc/storeBannerBg.webp');
+  background-color: #ffffff;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 70% ; /* Resize the background image to cover the entire container */
+  /* box-shadow: inset 0 0 0 1000px rgba(0, 118, 198,.2); */
+}
+
+.store__hero__section {
+  color: #fff;
+  padding-top: vw(8.9);
+  padding-bottom: vw(8.9);
+}
+
+.store__container {
+  z-index: 1;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: vw(3.7);
+  padding-left: vw(3.7);
+}
+
+.store__row {
+  display: flex;
+  margin-right: vw(50);
+  margin-bottom: vw(-1);
+  margin-left: vw(12);
+}
+
+.store__col {
+  margin-bottom: vw(1);
+  padding-left: vw(1);
+  max-width: vw(50);
+  justify-content: center;
+  display: flex;
+}
+
+.store__text__wrapper {
+  max-width: vw(30); /* override by HeroSection.js*/
+  padding-top: vw(3.7);
+  margin-left: vw(1.5);
+  text-align: left;
+  size: vw(40);
+}
+
+.store__heading {
+  margin-bottom: vw(1);
+  font-family: 'Galada';
+  /* line-height: 1.1vw; */
+  font-weight: 500;
+  color: #f7f8fa;
+  font-size: vw(3.6); /* override by HeroSection.js*/
+  white-space: pre-wrap;
+}
+
+.store__apple__button {
+  background-image: url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg);
+  padding: vw(2.1) vw(7);
+  background-repeat: no-repeat;
+  background-size:100%;
+  border-radius:vw(0.5);
+  
+}
+
+.store__apple__button:hover {
+  transform: scale(1.06);
+  transition: all 0.2s ease-out;
+  background-image: 
+  linear-gradient(
+    rgba(255, 255, 255, 0.25), 
+    rgba(255, 255, 255, 0.25)
+  ),
+  url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg);
+}
+
+.store__android__button {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg);
+  padding: vw(2.1) vw(7);
+  background-repeat: no-repeat;
+  background-size:100%;
+  background-position: center;
+  border-radius:vw(0.5);
+  //https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.webp
+}
+
+.store__android__button:hover {
+  transform: scale(1.04);
+  transition: all 0.2s ease-out;
+  background-image: 
+  linear-gradient(
+    rgba(255, 255, 255, 0.25), 
+    rgba(255, 255, 255, 0.25)
+  ),
+  url(https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg);
+}
+
+  
+
+  
+  
+  

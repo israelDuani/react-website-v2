@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+:root {
+  --base-size-hight: 1vh;
+  --base-size-width: 1vw;
+  
+}
+
+@function vw($value) {
+  @return calc(var(--base-size-width) * #{$value});
+}
+
+@function vh($value) {
+  @return calc(var(--base-size-hight) * #{$value});
+}
+

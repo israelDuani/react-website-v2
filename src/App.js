@@ -1,25 +1,54 @@
 import React from 'react';
-import './App.css';
-import Home from './components/pages/HomePage/Home';
-import Services from './components/pages/Services/Services';
-import Products from './components/pages/Products/Products';
-import SignUp from './components/pages/SignUp/SignUp';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import './App.scss';
+import 'antd/dist/antd.css';
+import './PublicCSS.scss'
+import Home from 'pages/HomePage/Home'
+import QAsection from 'pages/QA/QA'
+import QAunderDev from 'pages/QA/QAunderDev'
+import Tutorial from 'pages/Tutorial/Tutorial'
+import AboutUs from 'pages/AboutUs/AboutUs'
+import ContactUs from 'pages/ContactUs/ContactUs'
+import { BrowserRouter as Router,Redirect, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Footer from './components/pages/Footer.js/Footer';
+import Footer from './components/Footer';
+import Wrapper from 'Wrapper';
+import ScrollToTop from './components/ScrollToTop';
+import 'typeface-galada';
 
-function App() {
+import { useSelector } from "react-redux";
+import { useEffect } from "react";
+
+function App(props) {
+  const locale = navigator.language;
+  // ReactGA.initialize('UA-205149126-1')
+
+  
+  const siteOrientation = useSelector((state) => state.siteOrientation);
+  useEffect(() => {
+    //document.documentElement.dir = siteOrientation
+    document.getElementsByTagName("html")[0].setAttribute("dir", siteOrientation);
+  }, [siteOrientation]);
   return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route path='/' exact component={Home} />
-        <Route path='/services' component={Services} />
-        <Route path='/products' component={Products} />
-        <Route path='/sign-up' component={SignUp} />
-      </Switch>
-      <Footer />
-    </Router>
+    // <IntlProvider
+    // messages={props.locale == "en" ? english : hebrew}
+    // locale={props.locale ? props.locale : "en"}
+    // >
+    <Wrapper>
+      <Router>
+      <ScrollToTop>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/QA' component={QAunderDev} />
+          <Route path='/Tutorial' component={Tutorial} />
+          <Route path='/AboutUs' component={AboutUs} />
+          <Route path='/ContactUs' component={ContactUs} />
+          <Redirect from="*" to="/" />
+        </Switch>
+        <Footer />
+        </ScrollToTop>
+      </Router>
+    </Wrapper>
   );
 }
 
