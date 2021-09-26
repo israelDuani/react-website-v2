@@ -9,6 +9,8 @@ function StoreDownload() {
   const headlineSize = '2.5vw';
   const textMaxWidth = '50vw';
   const siteOrientation = useSelector((state) => state.siteOrientation);
+  const appleLink = "https://apps.apple.com/us/app/%D7%9E%D7%99%D7%9E%D7%99/id1576111355"
+  const googleLink = "https://play.google.com/store/apps/details?id=com.mimimobile"
 
   return (
     <>
@@ -44,7 +46,8 @@ function StoreDownload() {
             <div className='store__row'>
               <div className='store__col'>
                 <Link 
-                to='/contactus'
+                to={{pathname: googleLink}}
+                target='_blank'
                 onClick={()=>SendEvent("Store Download","android",siteOrientation,false)}
                 >
                   <div className='store__android__button'></div>
@@ -52,7 +55,8 @@ function StoreDownload() {
               </div>
               <div className='store__col'>
                 <Link 
-                to='/contactus'
+                to={{pathname: appleLink}}
+                target='_blank'
                 onClick={()=>SendEvent("Store Download","apple",siteOrientation,false)}
                 >
                   <div className='store__apple__button'></div>

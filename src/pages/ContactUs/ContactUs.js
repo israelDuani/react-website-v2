@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import TopSection from 'components/TopSection';
 import ContactForm from './ContactForm';
 import './ContactUs.scss';
@@ -13,18 +13,21 @@ import {SendEvent,SendPageLoad} from "components/sendAnalytics"
 
 function ContactUs() {
   const dispatch = useDispatch();
-  dispatch({ 
-    type: "SET_TAB",
-    payload: `/contactus`,
-  });
   const intl = useIntl();
-  
   document.title = intl.formatMessage({id: "route-title_contact_us"});
   const topSectionInfo = {headline:intl.formatMessage({id: "route-title_contact_us"})}
   const siteOrientation = useSelector((state) => state.siteOrientation);
   const textWrapperAlign = (siteOrientation === LANGUAGE_TYPE.ENGLISH ? 'left' : 'right');
-  SendPageLoad(window.location.pathname);
-  SendEvent('Page Load','Contact Us load',siteOrientation,true)
+ 
+  useEffect(() => {
+    dispatch({ 
+      type: "SET_TAB",
+      payload: `/contactus`,
+    });
+    SendPageLoad(window.location.pathname);
+    SendEvent('Page Load','Contact Us load',siteOrientation,true)
+  }, []);
+  
   return (
     <>
       <TopSection {...topSectionInfo}/>

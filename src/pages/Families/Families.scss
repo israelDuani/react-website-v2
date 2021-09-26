@@ -1,6 +1,6 @@
 @import '../../App.scss';
 
-.contact--us__background {
+.families__background {
   
     /* background-color: transparent!important; */
     background-color: #ffffff;
@@ -10,7 +10,7 @@
     /* box-shadow: inset 0 0 0 1000px rgba(0, 118, 198,.2); */
   }
   
-  .contact--us__container {
+  .families__container {
     color: #fff;
     padding-top: vw(3);
     padding-bottom: vw(6);
@@ -25,9 +25,9 @@
   }
  
 
-  .contact--us__row {
+  .families__row {
     display: flex;
-    width: 40vw;
+    width: 85vw;
     flex-direction: column;
     justify-content:center;
     align-items: left;
@@ -37,8 +37,19 @@
     flex-wrap: wrap;
     align-content: stretch;
   }
+
+  .families__row_centered {
+    display: flex;
+    width: 85vw;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top: vh(7);
+    flex-wrap: wrap;
+    align-content: stretch;
+  }
   
-  .contact--us__col {
+  .families__col {
     /* margin-bottom: 1vw; */
     width:vw(41);
     padding-right: vw(1);
@@ -47,37 +58,32 @@
     display: flex;
   }
   
-  .contact--us__text__wrapper {
-    max-width: vw(70);
+  .families__text__wrapper {
+    max-width: vw(90);
     padding-top: 0;
     text-align: left;
   }
   
-  .contact--us__text__wrapper__sec {
-    max-width: vw(20); /* override by HeroSection.js*/
-    padding-top: 0;
-    text-align: left;
-  }
 
-  .contact--us__heading {
+  .families__heading {
     margin-bottom: vw(0.2);
     font-family: 'Poppins';
     font-weight: 500;
     color: #f7f8fa;
-    font-size: vw(3.2); /* override by HeroSection.js*/
+    font-size: vw(3.7); /* override by HeroSection.js*/
     white-space: pre-wrap;
     text-align: left;
   }
   
-  .contact--us__subtitle {
+  .families__subtitle {
     font-family: 'Poppins';
     margin-bottom: vw(1);
-    font-size: vw(1.3);
+    font-size: vw(2);
     white-space: pre-wrap;
     text-align: left;
   }
 
-  .contact--us__subtitle__bold{
+  .families__subtitle__bold{
     font-family: 'Poppins';
     margin-bottom: vw(2);
     /* padding-top: 2vw; */
@@ -86,12 +92,12 @@
     white-space: pre-wrap;
   }
 
-  .contact--us__img__wrapper {
+  .families__img__wrapper {
     width: vw(30);
     margin-bottom: vw(3);
   }
   
-  .contact--us__img {
+  .families__img {
     border: 0;
     vertical-align: middle;
     object-fit: fill;
@@ -102,7 +108,7 @@
     padding-right: 0;
   }
 
-  .contact--us__btn__blue {
+  .families__btn__blue {
     box-shadow: 0 vw(0.5) vw(1.0) rgba(0, 0, 0, 0.2);
     font-family: 'Poppins';
     padding: vw(0.88) vw(3.7) vw(3.3) vw(3.7);
@@ -113,7 +119,7 @@
     border: none;
   }
 
-.contact--us__btn__blue:hover {
+.families__btn__blue:hover {
     background-color: #0888dd;
     color: #fff;
     border: none;
@@ -126,29 +132,29 @@
 
   @media screen and (max-width: 700px) {
 
-    .contact--us__text__wrapper{
+    .families__text__wrapper{
       max-width: vw(95);
     }
   
 
 
-    .contact--us__row{
+    .families__row{
       width: vw(95);
     }
 
-    .contact--us__heading{
+    .families__heading{
       font-size: vh(6) ;
     }
   
-    .contact--us__subtitle{
+    .families__subtitle{
       font-size: vh(2.3) ;
     }
 
-    .contact--us__col{
+    .families__col{
       width: vw(90);
     }
   
-    .contact--us__btn__blue {
+    .families__btn__blue {
       font-size: vh(3.5);
       padding: vw(0.88) vw(7.7) vw(8.63) vw(7.7);
     }

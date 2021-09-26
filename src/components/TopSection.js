@@ -14,7 +14,7 @@ function TopSection({headline}) {
       <div className={'top--section__container'}>
         <div className='top--section__text__wrapper'>
             <h1 className={titleTextColor} style = {{fontSize:` ${headlineSizeCt} `}}>
-            <FormattedMessage id={headline}></FormattedMessage>
+                {headline}
             </h1>
         </div>
       </div>

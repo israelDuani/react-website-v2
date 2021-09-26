@@ -16,6 +16,6 @@ export const LanguageIcon = (props) => {
     }
 
   return (
-    <img src={logoPath} alt={'hey'} className='language--icon_img' />
+    <img src={logoPath} alt={'country logo'} className='language--icon_img' />
   );
 };

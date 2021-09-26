@@ -16,13 +16,17 @@ function Home() {
   const siteOrientation = useSelector((state) => state.siteOrientation);
   document.title = intl.formatMessage({id: "route-title_home"});
   const dispatch = useDispatch();
-  dispatch({
-    type: "SET_TAB",
-    payload: `/`,
-  });
-  SendPageLoad(window.location.pathname);
-  SendEvent('Page Load','Home load',siteOrientation,true)
-
+  useEffect(()=>
+  {
+    dispatch({
+      type: "SET_TAB",
+      payload: `/`,
+    });
+    SendPageLoad(window.location.pathname);
+    SendEvent('Page Load','Home load',siteOrientation,true)
+  
+  },[])
+  
 
   return (
     <>

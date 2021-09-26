@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import TopSection from '../../components/TopSection';
 import { QAjson } from './Data';
 import { Collapse } from 'antd';

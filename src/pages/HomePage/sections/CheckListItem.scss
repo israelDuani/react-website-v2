@@ -7,6 +7,7 @@
     margin-left: vw(-1);
     flex-wrap: wrap;
     align-content: stretch;
+    // width: vw(93);
   }
   
   .checklist__col {
@@ -29,6 +30,16 @@
     margin-bottom: vw(1.5);
     width: vw(2);
     height: vw(2);
+  }
+
+  @media screen and (max-width: 700px) {
+    .checklist_icon_img {
+      width: vw(4.6);
+      height: vw(4.6);
+    }
+    .listItemText {
+      font-size: vw(3.8);
+    }
   }
  
   

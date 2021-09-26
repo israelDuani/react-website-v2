@@ -5,7 +5,7 @@ const initialState = {
   test: null,
   loading: false,
   error: null,
-  language: 'en',
+  language: 'en', 
   header: "left",
   selectedDashboardItem: "Dashboard",
   siteOrientation: LANGUAGE_TYPE.ENGLISH,

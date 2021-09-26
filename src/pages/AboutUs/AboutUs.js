@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import TopSection from 'components/TopSection';
 import { aboutUsText } from './Data';
 import './AboutUs.scss';
@@ -13,11 +13,6 @@ import {SendEvent,SendPageLoad} from "components/sendAnalytics"
 
 function AboutUs() {
   const dispatch = useDispatch();
-  dispatch({
-    type: "SET_TAB",
-    payload: `/aboutus`,
-  });
-  
   const intl = useIntl();
   document.title = intl.formatMessage({id: "route-title_about_us"});
   const siteOrientation = useSelector((state) => state.siteOrientation);
@@ -27,8 +22,15 @@ function AboutUs() {
   const seperatorPath= 'images/PurpleSeperatorTwo.webp'
   const sectionImgPath = 'images/Rocket.webp'
   const topSectionInfo = {headline:intl.formatMessage({id: "route-title_about_us"})}
-  SendPageLoad(window.location.pathname);
-  SendEvent('Page Load','About Us load',siteOrientation,true)
+
+  useEffect(() => {
+    dispatch({
+      type: "SET_TAB",
+      payload: `/aboutus`,
+    });
+    SendPageLoad(window.location.pathname);
+    SendEvent('Page Load','About Us load',siteOrientation,true)
+  }, []);
   return (
     <>
       <TopSection {...topSectionInfo}/>
@@ -36,14 +38,14 @@ function AboutUs() {
       <div className={'about--us__container'}>
           <div className='about--us__row'>
             <div className='about--us__img__wrapper'>
-                <img src={sectionImgPath} alt={'sectionImgAlt'} className='about--us__img' />
+                <img src={sectionImgPath} alt={'child on a rocket'} className='about--us__img' />
             </div>
                 <div className='about--us__text__wrapper'>
                   <h1 className={titleTextColor}>
                     <FormattedMessage id="about-us__headline"></FormattedMessage>
                   </h1>
                     <div className='public__seperator__purple__wrapper'>
-                      <img src={seperatorPath} alt={'sectionImgAlt'} className='public__seperator__purple'/>
+                      <img src={seperatorPath} alt={'star seperator'} className='public__seperator__purple'/>
                     </div> 
                   <p className={descTextColor}  style = {{textAlign: textWrapperAlign }}>
                   {

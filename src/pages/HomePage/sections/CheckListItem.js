@@ -12,7 +12,7 @@ function CheckListItem({
       <>
         <div className='checklist__row'>
             <div className='checklist__col'>
-                <img src={'images/checkMark.webp'} alt={'hey'} className='checklist_icon_img' />
+                <img src={'images/checkMark.webp'} alt={'check mark'} className='checklist_icon_img' />
             </div>
             <div className='checklist__col'>
             <p className='listItemText' style = {{textAlign:textWrapperAlign}}>

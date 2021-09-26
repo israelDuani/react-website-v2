@@ -4,8 +4,8 @@
   "route-title_tutorial":"הדרכה",
   "route-title_about_us":"קצת עלינו",
   "route-title_contact_us":"צור קשר",
+  "route-title_famelies" : "מימי למשפחות",
 
-  "analytic_overview": "Analytics Overview",
   "//comment_0": "about us - not done, need to add main text",
   "about-us__sign_up_btn": "הרשמה",
 
@@ -39,10 +39,10 @@
   "contact-us__form_phone_placeholder": "מספר טלפון (רשות)",
   "contact-us__form_subject_placeholder": "נושא *",
   "contact-us__form_content_placeholder": "ההודעה שלך *",
-  "contact-us__form_name_err": "Please input your name",
-  "contact-us__form_email_err": "Please input your mail",
-  "contact-us__form_subject_err": "Please input subject",
-  "contact-us__form_content_err": "Please input message",
+  "contact-us__form_name_err": "יש להזין שם",
+  "contact-us__form_email_err": "יש להזין אימייל תקין",
+  "contact-us__form_subject_err": "יש להזין נושא",
+  "contact-us__form_content_err": "יש לכתוב את ההודעה שתרצה להעביר לנו",
   "contact-us__form_btn": "שליחה",
 
   "pricing__subscribtion_price_small": "6.99₪",
@@ -75,6 +75,14 @@
   "what-you-get__button_sign_up": "לחץ כאן להרשמה",
   "home__first_section_button": "הרשם עכשיו",
   "home__second_section_button": "למד עוד",
-  "home__third_section_button": "התחל עכשיו"
+  "home__third_section_button": "התחל עכשיו",
 
+  "home__first_section_family_link" : "לחץ כאן",
+  "families__heading" : "בקרוב זה מגיע!",
+  "families__subtitle" : "ברגעים אלו אנחנו עובדים על גרסא שונה של מימי שתיהיה מותאמת במיוחד למשפחות. \nמוזמנים להכניס את המייל שלכם לרשימת ההמתנה ואתם תיהיו הראשונים שידעו ברגע שאנחנו נתחיל את מימי למשפחות!",
+  "families__sucess_title" : "קיבלנו את המייל שלך, נעדכן בקרוב!",
+  "families__sucess_btn" : "חזרה לדף הבית",
+
+  "footer__terms_url" : "https://drive.google.com/file/d/1-W8NpxcuMYOF4s_Q14HgiYmuRQpxFCPY/view?usp=sharing",
+  "footer__privacy_url" : "https://drive.google.com/file/d/1r4sq6weAOSHszlIGMBfNYgfsQ7DQiFaB/view?usp=sharing"
 }

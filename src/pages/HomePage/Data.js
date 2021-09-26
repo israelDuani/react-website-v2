@@ -2,20 +2,22 @@ export const homeIntro = {
   backgroundPath:'hero__intro__section__first',
   sectionName: 'hero__intro__section',
   sectionImgPath: 'images/phoneAndLaptop.webp',
-  sectionImgAlt: 'Credit Card',
+  sectionImgAlt: 'mimi on phone and laptop',
   imageDirection: '',
   imageTopMargin: '4vw',
-  topLine: 'Want to use MIMI for Institutions? click here',
+  topLine: 'Want to use MIMI for Families? ',
   headline: 'Education in a new way',
-  description: `Mimi for families allows you, the parents, to educate your child in a new and unique way. The app was developed in collaboration with educators and psychologists`,
-  topLineHeb: 'רוצה להשתמש במימי למשפחות? לחץ כאן',
+  description: `Mimi allows you to educate the trainees in a new way. 
+With all the technological innovations, it's time for education to move forward.
+So we took up the glove and developed Mimi in collaboration with psychologists and educators.`,
+  topLineHeb: 'רוצה להשתמש במימי למשפחות? ',
   headlineHeb: 'חינוך בדרך חדשה',
   descriptionHeb: `פרוייקט מימי מאפשר לך לחנך את החניכים בצורה שונה ממה שהכרתם.
 עם כל ההתחדשויות הטכנולוגיות הגיע הזמן שגם החינוך יתקדם, לא ככה?
 אז הרמנו את הכפפה ופיתחנו את מימי בשיתוף עם פסיכולוגים ואנשי חינוך.`,
   // centerContentText,
   headlineSize: '4.5vw',
-  contentSize: '1.7vw',
+  contentSize: '1.6vw',
   // textMaxWidth,
   lightText: true,
   lightTextDesc: true,
@@ -23,14 +25,13 @@ export const homeIntro = {
   btnType:'btn hero__btn__green',
   btnClickPath: '\contactus'
   // seperatorPath,
-    
 }; 
 
 export const homeIdea = {
   backgroundPath: 'hero__idea__section__second',
   sectionName: 'hero__idea__section',
   sectionImgPath: 'images/sectionTwoMainImage.webp',
-  sectionImgAlt: 'Vault',
+  sectionImgAlt: 'kids illustration',
   imageDirection: 'left',
   // imageTopMargin,
   // topLine,
@@ -121,7 +122,7 @@ export const homeFeaturesIntro = {
 export const homeObjFeaturesWeb = {
   imgStart: '',
   img: 'images/tablet.webp',
-  alt: 'Vault',
+  alt: 'tablet',
   featuresIds: ["what-you-get__web_item_one","what-you-get__web_item_two","what-you-get__web_item_three",
            "what-you-get__web_item_four","what-you-get__web_item_five","what-you-get__web_item_six",
            "what-you-get__web_item_seven"],
@@ -130,7 +131,7 @@ export const homeObjFeaturesWeb = {
 export const homeObjFeaturesApp = {
   imgStart: 'start',
   img: 'images/twoScreensApp.webp',
-  alt: 'Vault',
+  alt: 'phone',
   haveButton: 'yes',
   featuresIds: ["what-you-get__app_item_one","what-you-get__app_item_two","what-you-get__app_item_three",
                 "what-you-get__app_item_four","what-you-get__app_item_five","what-you-get__app_item_six",

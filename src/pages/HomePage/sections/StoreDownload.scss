@@ -29,12 +29,14 @@
   margin-right: vw(50);
   margin-bottom: vw(-1);
   margin-left: vw(12);
+  justify-content: center;
 }
 
 .store__col {
   margin-bottom: vw(1);
   padding-left: vw(1);
   max-width: vw(50);
+  justify-content: center;
   justify-content: center;
   display: flex;
 }
@@ -102,4 +104,69 @@
 
   
   
-  
+@media screen and (max-width: 700px) {
+  .store__background__image{
+    background-image: url('../../../imagesSrc/storeBannerMobileBg.webp');
+    background-size: 90% ; /* Resize the background image to cover the entire container */
+  }
+
+  .store__hero__section {
+    height: vh(90);
+    width: vw(90);
+  }
+
+  .store__text__wrapper{
+    max-width: vw(100) !important;
+    width: vw(100);
+    padding-top: vh(42);
+    margin-left: vw(1.5);
+    size: vw(40);
+  }
+
+
+  html[dir='rtl'] .store__container {
+    margin-right: vw(5);
+    margin-left: auto;
+  }
+  .store__container {
+    z-index: 1;
+    width: 100%;
+    margin-right: auto;
+    margin-left: vw(5);
+    padding-right: vw(3.7);
+    padding-left: vw(3.7);
+  }
+
+  html[dir='rtl'] .store__heading {
+    margin-top: vh(5);
+    text-align: right;
+   }
+
+  .store__heading {
+    margin-bottom: vw(1);
+    margin-left: vw(0);
+    font-size: vh(6) !important; /* override by HeroSection.js*/
+    text-align: left;
+    margin-left: vw(5);
+  }
+
+  .store__row {
+    margin-right: vw(0);
+    margin-bottom: vw(-1);
+    margin-left: vw(0);
+  }
+  .store__col {
+    max-width: vw(80);
+  }
+
+  .store__android__button {
+    padding: vw(5.4) vw(18);
+    background-size:100%;
+  }
+
+  .store__apple__button {
+    // margin-top: vh(0.6);
+    padding: vw(5.4) vw(18);
+    background-size:100%;
+  }
+}

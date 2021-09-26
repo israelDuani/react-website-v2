@@ -1,16 +1,21 @@
-import React from "react";
+import React,{ useEffect } from 'react';
 import { Form, Input, Button, Checkbox } from "antd";
 import './ContactUs.scss';
 import emailjs from 'emailjs-com';
 import { FormattedMessage } from "react-intl";
 import { useIntl } from "react-intl";
+import { IsMobileDevice } from "../../components/CoreFunctions";
+import { useDispatch } from "react-redux";
+
 
 function ContactForm() {
   const intl = useIntl();
+  const dispatch = useDispatch();
   const { TextArea } = Input;
-  const formStyle = {height:'3vw',marginBottom:'1.6vw' };
-  const inputStyle = {maxWidth:'20vw', borderRadius: '0.4vw',height:'3vw',fontSize:'1.5vw',paddingLeft: '1vw',borderWidth:'0.2vw' };
-  const textAreaStyle = {borderRadius: '0.4vw',fontSize:'1.5vw',paddingLeft: '1vw',borderWidth:'0.2vw' };
+  const isMobile = IsMobileDevice()
+  const formStyle = {height:isMobile?'8vw':'3vw',marginBottom:isMobile?'3.6vw': '1.6vw'};
+  const inputStyle = {maxWidth:isMobile?'45vw':'20vw', borderRadius: '0.4vw',height:isMobile?'8vw':'3vw',fontSize:isMobile?'3.5vw':'1.5vw',paddingLeft: '1vw',borderWidth:'0.2vw' };
+  const textAreaStyle = {height:isMobile?'8vw':'3vw',borderRadius: '0.4vw',fontSize:isMobile?'3.5vw':'1.5vw',paddingLeft: '1vw',borderWidth:'0.2vw' };
   const wideFormStyle = {flex:1};
   const buttonWrapperStyle = {height:'3.5vw'}
   const SERVICE_ID = "service_6nqyckv";
@@ -25,6 +30,13 @@ function ContactForm() {
   const emailErr = intl.formatMessage({id: "contact-us__form_email_err"})
   const subjectErr = intl.formatMessage({id: "contact-us__form_subject_err"})
   const contentErr = intl.formatMessage({id: "contact-us__form_content_err"})
+
+  // useEffect(() => {
+  //   dispatch({ 
+  //     type: "SET_TAB",
+  //     payload: `/contactus`,
+  //   });
+  // }, []);
 
 
   const onFinishFailed = (errorInfo) => {

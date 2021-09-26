@@ -72,3 +72,33 @@
     color: #fff;
     border: none;
   }
+
+  @media screen and (max-width: 700px) {
+    .features__container{
+       margin-top: vh(5);
+    }
+    .features__row {
+        flex-direction: column-reverse !important;
+        width: vw(93);
+    }
+    .features__text__wrapper {
+        max-width: vw(93) !important; /* override by HeroSection.js*/
+        width: vw(93);
+    }
+    .features__col {
+        max-width: 100%;
+    }
+    .features__img__wrapper {
+        width: vw(80);
+    }
+      
+    .features__img {
+        width: vw(80);
+    }
+    .features__btn__blue {
+        padding: vw(0.88) vw(3.7);
+        font-size: vh(3);
+        margin-left: vw(12);
+      }
+    
+  }

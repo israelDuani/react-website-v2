@@ -8,13 +8,13 @@ import QAunderDev from 'pages/QA/QAunderDev'
 import Tutorial from 'pages/Tutorial/Tutorial'
 import AboutUs from 'pages/AboutUs/AboutUs'
 import ContactUs from 'pages/ContactUs/ContactUs'
+import Families from 'pages/Families/Families'
 import { BrowserRouter as Router,Redirect, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Wrapper from 'Wrapper';
 import ScrollToTop from './components/ScrollToTop';
 import 'typeface-galada';
-
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 
@@ -43,6 +43,7 @@ function App(props) {
           <Route path='/Tutorial' component={Tutorial} />
           <Route path='/AboutUs' component={AboutUs} />
           <Route path='/ContactUs' component={ContactUs} />
+          <Route path='/families' component={Families} />
           <Redirect from="*" to="/" />
         </Switch>
         <Footer />

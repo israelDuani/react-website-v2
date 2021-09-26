@@ -37,7 +37,7 @@
 .footer__offer__text {
   font-family: 'Poppins';
   margin-bottom: vw(0.2);
-  font-family: 'Galada';
+  // font-family: 'Galada';
   font-weight: 400;
   color: #f7f8fa;
   font-size: vw(2.6);
@@ -125,24 +125,69 @@
 
 
 
-@media screen and (max-width: 820px) {
-  .footer-links {
-    padding-top: 2rem;
+@media screen and (max-width: 700px) {
+
+  .about--us__text__wrapper{
+    max-width: vw(90);
   }
 
-  .footer-input {
-    width: 100%;
+  .about--us__subtitle{
+    font-size: vh(2.5) ;
   }
 
-  .btn {
-    width: 100%;
+  .footer__logo__wrapper {
+    /* display: inline-block; */
+    height: vw(10);
+    width: auto;
+    font-size: vh(3.5);
+    margin-bottom: vw(0);
+  }
+  .footer__logo {
+    /* display: inline-block; */
+    height: vw(10);
+    width: auto;
+    margin-bottom: vw(1);
   }
 
-  .footer-link-wrapper {
-    flex-direction: column;
+  .public__seperator__purple__wrapper {
+    height: auto;
+    width: vw(90);
+    margin-left: 0;
+    margin-top: vw(-1);
+    margin-bottom: vw(1);
   }
 
-  .social-media-wrap {
-    flex-direction: column;
+  .footer__website__copyright{
+    font-size: vh(1.5);
   }
+  
+  .website__file__link{
+    
+    font-size: vh(1.2);
+  }
+
+  .public__seperator__purple {
+    height: auto;
+    width: vw(80);
+  }
+  .footer__bottom__line{
+    max-width: vw(95);
+  }
+  .website__files__links__container{
+    width: vw(30);
+  }
+  .footer__offer__text{
+    font-family: 'Arimo';
+    font-size: vw(4);
+    font-weight: 600;
+  }
+
+  .footer__offer__btn{
+    font-size: vw(4);
+  }
+  .footer__offer__wrapper{
+    height: vh(13);
+  }
+
 }
+

@@ -36,8 +36,8 @@
 
 .hero__intro__section {
   color: #fff;
-  padding-top: vw(3);
-  padding-bottom: vw(6);
+  padding-top: vw(8);
+  padding-bottom: vw(7);
 }
 
 .hero__idea__section {
@@ -104,6 +104,11 @@
   text-transform: uppercase;
   margin-bottom: vw(1.2);
   white-space: pre-wrap;
+}
+
+a {
+  color: #25ce4a;
+  font-weight: 600;
 }
 
 .hero__heading {
@@ -193,6 +198,7 @@
 
 
 
+
 // @media screen and (max-width: 991px) {
 //   .container {
 //     padding-right: 30px;
@@ -223,13 +229,13 @@
 
   .hero__intro__section{
     padding-top: vw(3);
-    padding-bottom: vw(6);
-    height: vh(95);
+    padding-bottom: vh(8);
+    // height: vh(95);
   }
 
   .hero__idea__section {
     color: #fff;
-    height: vh(120);
+    margin-bottom: vh(3);
   }
 
   .hero__get__started__section {
@@ -243,15 +249,16 @@
   }
 
   .hero__heading {
-    font-size: vh(7) !important; /* override by HeroSection.js*/
+    font-size: vh(6.5) !important; /* override by HeroSection.js*/
   }
 
   .hero__subtitle {
-    font-size: vh(3) !important; /* override by HeroSection.js*/
+    font-family: 'Arimo';
+    font-size: vh(2.5) !important; /* override by HeroSection.js*/
   }
 
   .hero__topline {
-    font-size: vh(2.7);
+    font-size: vh(2.5);
     font-weight: 400;
   }
 
@@ -276,12 +283,12 @@
   .hero__btn__white {
     margin-top: vh(2);
     padding: vw(0.88) vw(3.7);
-    font-size: vw(3.5);
+    font-size: vw(5.5);
   }
 
   .hero__btn__white--and--border {
     padding: vw(0.88) vw(3.7);
-    font-size: vw(3.2);
+    font-size: vw(5.5);
     border: vw(0.2);
     border-style: solid;
   }

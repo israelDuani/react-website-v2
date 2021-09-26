@@ -55,7 +55,13 @@ function HeroSection({
           <div className='hero__row' style={{flexDirection: imageDirectionCt}}>
             <div className='hero__col' style={{flexBasis:sectionImgPath ? '50%' : '100%'}}>
               <div className='hero__text__wrapper' style = {{maxWidth:` ${textMaxWidthCt} `,textAlign: textWrapperAlign }}>
-                <div className='hero__topline'>{finalTopline}</div>
+                {finalTopline?<div className='hero__topline'>
+                  {finalTopline}
+                  <Link to='/Families'>
+                  <FormattedMessage id="home__first_section_family_link"></FormattedMessage>
+                  </Link>
+                  </div>
+                  :<></>}
                   <h1 className={titleTextColor} style = {{fontSize:` ${headlineSizeCt} `}}>
                     {finalHeadline}
                   </h1>

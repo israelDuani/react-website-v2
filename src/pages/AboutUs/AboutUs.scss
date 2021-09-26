@@ -94,3 +94,44 @@
   }
   
   
+@media screen and (max-width: 700px) {
+
+  .about--us__text__wrapper{
+    max-width: vw(90);
+  }
+
+
+  .about--us__heading{
+    font-size: vh(5) ;
+  }
+
+  .about--us__subtitle{
+    font-size: vh(2.5) ;
+  }
+
+  .about--us__img {
+    /* display: inline-block; */
+    height: vh(20);
+    width: auto;
+  }
+  .about--us__img__wrapper {
+    /* display: inline-block; */
+    height: vh(20);
+    width: auto;
+  }
+
+  .public__seperator__purple__wrapper {
+    height: auto;
+    width: vw(90);
+    margin-left: 0;
+    margin-top: vw(-1);
+    margin-bottom: vw(1);
+  }
+  
+  .public__seperator__purple {
+    height: auto;
+    width: vw(80);
+  }
+}
+
+  

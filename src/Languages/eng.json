@@ -4,8 +4,8 @@
   "route-title_tutorial":"Tutorials",
   "route-title_about_us":"About Us",
   "route-title_contact_us":"Contact Us",
+  "route-title_famelies" : "Mimi for families",
 
-  "analytic_overview": "Analytics Overview",
   "//comment_0": "about us - not done, need to add main text",
   "about-us__sign_up_btn": "SIGN UP",
 
@@ -42,7 +42,7 @@
   "contact-us__form_subject_placeholder": "Subject *",
   "contact-us__form_content_placeholder": "Your Message *",
   "contact-us__form_name_err": "Please input your name",
-  "contact-us__form_email_err": "Please input your mail",
+  "contact-us__form_email_err": "Please enter valid email",
   "contact-us__form_subject_err": "Please input subject",
   "contact-us__form_content_err": "Please input message",
   "contact-us__form_btn": "Submit",
@@ -79,5 +79,16 @@
   "what-you-get__button_sign_up": "CLICK HERE TO SIGN UP",
   "home__first_section_button": "SIGN UP NOW",
   "home__second_section_button": "Learn More",
-  "home__third_section_button": "GET STARTED NOW"
+  "home__third_section_button": "GET STARTED NOW",
+
+  "home__first_section_family_link" : "Click Here",
+  "families__heading" : "Coming soon!",
+
+  "families__subtitle" : "We are currently working on a different version of Mimi that will be especially suitable for families. \nFeel free to put your email on the waiting list and you will be the first to know as soon as we start Mimi for families!",
+  "families__sucess_title" : "We recived your email, We will update you soon!",
+  "families__sucess_btn" : "Return To Home Page",
+
+  "footer__terms_url" : "https://drive.google.com/file/d/139qVkHuUkbOeF5PhStyFje4jGkZK8fLZ/view?usp=sharing",
+  "footer__privacy_url" : "https://drive.google.com/file/d/1CzKyzsksS6bvDuyBpSpFmoC095wdi7nk/view?usp=sharing"
+
 }

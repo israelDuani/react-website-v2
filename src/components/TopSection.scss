@@ -8,7 +8,7 @@
       rgba(0, 118, 198, 0.2), 
       rgba(0, 51, 86, 0.7)
     ), url('../imagesSrc/sectionOneBg.webp');
-    background-color: #f00946;
+    background-color: #50a6ca;
     background-position: center bottom,center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size:100% ,cover,100% ; /* Resize the background image to cover the entire container */
@@ -17,14 +17,14 @@
   
   .top--section__container {
     color: #fff;
-    padding-top: vw(10);
+    padding-top: vw(11);
     padding-bottom: vw(6);
     display: flex;
     justify-content: center;
   }
 
   .top--section__text__wrapper {
-    max-width: vw(45); /* override by HeroSection.js*/
+    max-width: vw(90);
     padding-top: 0;
     text-align: left;
   }
@@ -39,3 +39,10 @@
     white-space: pre-wrap;
   }
   
+
+  @media screen and (max-width: 700px) {
+    .top--line__heading{
+      margin-top: vh(4);
+      font-size: vh(6) !important;
+    }
+  }
