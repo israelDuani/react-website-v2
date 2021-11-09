@@ -18,10 +18,11 @@ import ScrollToTop from './components/ScrollToTop';
 import 'typeface-galada';
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
+import ReactGA from 'react-ga';
 
 function App(props) {
   const locale = navigator.language;
-  // ReactGA.initialize('UA-205149126-1')
+  ReactGA.initialize('UA-205149126-1')
 
   
   const siteOrientation = useSelector((state) => state.siteOrientation);

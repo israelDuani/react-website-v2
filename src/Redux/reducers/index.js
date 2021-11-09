@@ -5,10 +5,10 @@ const initialState = {
   test: null,
   loading: false,
   error: null,
-  language: 'en', 
+  language: 'heb', 
   header: "left",
   selectedDashboardItem: "Dashboard",
-  siteOrientation: LANGUAGE_TYPE.ENGLISH,
+  siteOrientation: LANGUAGE_TYPE.HEBREW,
   currentTab : `/`
 };
 
