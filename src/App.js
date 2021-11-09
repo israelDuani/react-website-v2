@@ -9,6 +9,7 @@ import Tutorial from 'pages/Tutorial/Tutorial'
 import AboutUs from 'pages/AboutUs/AboutUs'
 import ContactUs from 'pages/ContactUs/ContactUs'
 import Families from 'pages/Families/Families'
+import LegalPage from 'pages/Legal/LegalPage'
 import { BrowserRouter as Router,Redirect, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -44,6 +45,10 @@ function App(props) {
           <Route path='/AboutUs' component={AboutUs} />
           <Route path='/ContactUs' component={ContactUs} />
           <Route path='/families' component={Families} />
+          <Route path='/legal/privacypolicy/en' component={LegalPage} />
+          <Route path='/legal/privacypolicy/heb' component={LegalPage} />
+          <Route path='/legal/termsofuse/en' component={LegalPage} />
+          <Route path='/legal/termsofuse/heb' component={LegalPage} />
           <Redirect from="*" to="/" />
         </Switch>
         <Footer />

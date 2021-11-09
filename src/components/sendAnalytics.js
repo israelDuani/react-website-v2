@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactGA from 'react-ga';
 
-const isOn = false;
+const isOn = true;
 
 export function SendEvent(eventName,referenceLocation,siteOrientation,isInteract) {
     if(isOn)
